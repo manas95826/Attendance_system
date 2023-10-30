@@ -4,6 +4,9 @@ import datetime  # Import the datetime module
 # Load the cascade classifier for face detection
 face_cascade = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 
+# Set the title of the OpenCV window
+cv2.setWindowTitle("Attendance System", "Attendance System")
+
 # Define a function to recognize faces
 def recognize_faces(image):
     # Convert the image to grayscale
@@ -27,8 +30,11 @@ Your attendance till now is : 79.45% for the month October.
         lines = attendance.split('\n')
         line_height = 20
         for i, line in enumerate(lines):
-            cv2.putText(image, line, (10, 20 + i * line_height), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            cv2.putText(image, line, (x + 5, y + h + 20 + i * line_height), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
         
+    # Add "Attendance System" at the top middle
+    cv2.putText(image, "Attendance System", (image.shape[1] // 2 - 100, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    
     return image
 
 # Capture video frames from the webcam
@@ -42,7 +48,7 @@ while True:
     output = recognize_faces(frame)
     
     # Display the output
-    cv2.imshow("Output", output)
+    cv2.imshow("Attendance System", output)
     
     # Get the current date and time
     current_time = datetime.datetime.now()
