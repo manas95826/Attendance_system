@@ -14,7 +14,7 @@ This is a Python-based attendance system that uses face recognition to mark atte
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone [<repository-url>](https://github.com/manas95826/Attendance_system)
+    git clone https://github.com/manas95826/Attendance_system
     ```
 
 2. Install the required dependencies using pip:
