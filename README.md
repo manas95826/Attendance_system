@@ -14,7 +14,7 @@ This is a Python-based attendance system that uses face recognition to mark atte
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone <repository-url>
+    git clone [<repository-url>](https://github.com/manas95826/Attendance_system)
     ```
 
 2. Install the required dependencies using pip:
@@ -26,7 +26,7 @@ This is a Python-based attendance system that uses face recognition to mark atte
 3. Run the system:
 
     ```bash
-    python attendance_system.py
+    python app.py
     ```
 
 4. The system will display the video feed from your webcam. After 3 seconds, it will start recognizing faces and mark attendance.
@@ -41,7 +41,7 @@ This is a Python-based attendance system that uses face recognition to mark atte
 
 ## Author
 
-- [Your Name]
+- Manas Chopra
 
 ## License
 
