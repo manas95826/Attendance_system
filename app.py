@@ -20,7 +20,7 @@ def recognize_faces(image):
         cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
         # Add your name to the image
-        name = "manas"
+        name = "Pranav Kumar"
         cv2.putText(image, f"Name: {name}", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
         # Indicate attendance marked
